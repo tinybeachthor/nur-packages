@@ -16,7 +16,7 @@ buildGoModule rec {
     sha256 = "1qdvnfxz81ij1y7qdk5xjq0nd3dqgbdjq0gmramxmkkz892cdaf3";
   };
 
-  modSha256 = "11nz0fdxpsc9ifszprgp1l70myhadh90hcs94cilrpqwlci0i8c5";
+  vendorSha256 = "sha256-aRwremxroH6lvkVEHh0Nl39NtR0BScB0lq0YWnpBl6A=";
 
   meta = {
     description = "SDK for building Kubernetes applications. Provides high level APIs, useful abstractions, and project scaffolding";
