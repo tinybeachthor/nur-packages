@@ -7,7 +7,7 @@
       pkgs = import nixpkgs { system = "x86_64-linux"; };
     };
     overlay = final: prev: {
-      nur = import ./default.nix {
+      tinybeachthor = import ./default.nix {
         pkgs = prev;
       };
     };
