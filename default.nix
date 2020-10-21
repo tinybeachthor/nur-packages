@@ -7,8 +7,7 @@
 #     nix-build -A mypackage
 
 {
-  pkgs ? import <nixpkgs> {},
-  haskell-updates-pkgs ? pkgs
+  pkgs ? import <nixpkgs> {}
 }:
 
 {
@@ -22,7 +21,6 @@
   example-package = pkgs.callPackage ./pkgs/example-package { };
   cabbage = pkgs.callPackage ./pkgs/cabbage { };
   spotify-authenticate = pkgs.callPackage ./pkgs/spotify-authenticate { };
-  haskell-language-server = haskell-updates-pkgs.haskell.packages.callPackage ./pkgs/haskell-language-server { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
