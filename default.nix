@@ -33,4 +33,7 @@ rec {
     inherit (libraries) libinstpatch;
   };
   netlogo = pkgs.callPackage ./pkgs/netlogo { };
+  davinci-resolve = pkgs.callPackage ./pkgs/davinci-resolve {
+    qtbase = pkgs.qt5.qtbase;
+  };
 }
